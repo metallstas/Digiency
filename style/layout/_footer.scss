@@ -1,0 +1,123 @@
+.footer {
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
+  padding: 56px 0 20px 0;
+
+  &__content {
+    display: flex;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #FFFFFF;
+    justify-content: space-between;
+
+    & .footer__list {
+    
+      list-style: none;
+      width: 270px;
+
+      &__title {
+        font-family: 'Poppins-SemiBold';
+        font-size: $card-title;
+        line-height: 37px;
+        color: $orange;
+      }
+
+      &__text {
+        margin-top: 20px;
+        font-family: 'Poppins-Medium';
+        font-size: $header-text;
+        line-height: 30px;
+        color: #fff;
+
+        & a {
+          font-family: 'Poppins-Medium';
+          font-size: $header-text;
+          line-height: 30px;
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+
+      &__text-little {
+        margin-top: 20px;
+        font-family: 'Poppins-Regular';
+        font-size: 16px;
+        line-height: 24px;
+        color: #fff;
+      }
+
+      &__social {
+        display: flex;
+        
+        & li {
+          position:relative;
+          margin-top: 30px;
+          background-color: #fff;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          list-style: none;
+          margin-right: 20px;
+          cursor: pointer;
+
+          &:hover svg {
+              fill: $orange;
+            }
+          
+          & a {
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            
+            & svg {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+            }
+
+                        
+          }
+        }
+      }
+    }
+  }
+
+  &__copy {
+
+    display: flex;
+    align-items: center;
+    padding-top: 22px;
+
+    & :nth-child(2) {
+      margin-right: 100px;
+    }
+
+    & .copyright {
+
+      margin-right: 20px;
+      font-size: 20px;
+      color: #fff;
+    }
+
+    &__text {
+      display: flex;
+      align-items: center;
+      color: #fff;
+      margin-right: 31px;
+
+      & .circle {
+        width: 10px;
+        height: 10px;
+        background-color: $orange;
+        border-radius: 50%;
+        margin-right: 11px;
+      }
+    }    
+
+  }
+
+  
+}
+

@@ -1,0 +1,69 @@
+.subscripe {
+  
+  &__wrapper {
+
+    padding: 120px 0;
+  }
+
+  & .business__content {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 51px 40px;
+    background-color: $orange;
+    border-radius: 10px;
+
+    &__p {
+    color: #fff;
+
+    }
+
+    &__p:after {
+      background-color: #fff;
+    }
+
+    & h2 {
+      color: #fff;
+    }
+
+    & form {
+      position:relative; 
+      margin-right: 10px;
+      
+
+      & input {
+        height: 70px; 
+        width: 640px;
+        border-radius: 10px;
+        border: none;
+        padding-left: 25px;
+        
+        font-family: 'Poppins-Regular';
+        color: $gray;
+        font-size: $card-text;
+        line-height: 24px; 
+
+        &::placeholder {
+          font-family: 'Poppins-Regular';
+          color: $gray;
+          font-size: $card-text;
+          line-height: 24px;  
+        }
+      }
+
+      & .main__button {
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        width: 222px;
+        height: 60px;
+        margin: 0;
+        transform: translateY(-50%);
+      }
+    }
+  }
+ 
+
+}
+

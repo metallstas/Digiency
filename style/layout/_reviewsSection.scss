@@ -1,0 +1,67 @@
+
+.reviews {
+
+  &__wrapper {
+    padding: 120px 0;
+  }
+
+  &__cards {
+    display: flex;
+  }
+
+  &__card {
+
+    &__item {
+
+      & >p {
+        margin-bottom: 25px;
+        font-family: 'Poppins-Light';
+        font-size: $card-text;
+        line-height: 24px;
+        color: $gray;
+      }
+
+      padding: 26px 25px;
+      background-color: $color-reviews-card;
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      
+
+      &__user {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        & div {
+          margin: 0 0 1px 15px;
+
+          & :first-child {
+            font-family: 'Poppins-Medium';
+            font-size: $header-text;
+            line-height: 30px;
+            color: $orange;
+          }
+
+          & :last-child {
+            font-family: 'Poppins-Light';
+            font-size: $card-little-text;
+            line-height: 19px;
+            color: $gray;
+          }
+        }
+
+        & :last-child {
+          margin-left: auto;
+        }
+      }
+
+      &__stars {
+        margin-bottom: 14px;       
+      }
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+.capabilities {
+  
+  background-color: #fff;
+
+  &__wrapper {
+    padding: 120px 0;
+  }
+
+  &__content-wrapper {
+    display: flex;
+  }
+
+  &__content {
+    margin-top: 0;
+  }
+
+  &__statistic {
+    
+    display: flex;
+    justify-content: space-between;
+    
+    margin-top: 40px;
+
+    &__item {
+      width: 125px;
+      padding: 10px 15px 15px;
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      text-align: center;
+
+      & :first-child {
+        font-family: 'Poppins-SemiBold';
+        font-size: $card-title;
+        line-height: 37px;
+        color: $orange;
+
+      }
+
+      & :last-child {
+        font-family: 'Poppins-Light';
+        font-size: $card-little-text;
+        line-height: 19px;
+        color: $brown;
+      }
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 22px;
+    }
+  }
+
+  &__analisis {
+    
+    display: flex;
+    justify-content: space-between;
+    background-color: $orange;
+    margin-top: 120px;
+    padding: 70px 60px;
+    border-radius: 10px;
+    text-align: center;
+
+
+
+
+    &__item {
+      position: relative;
+      list-style: none;
+
+      & p {
+        color: #fff;
+        font-family: 'Poppins-Medium';
+        font-size: $header-text;
+        line-height: 30px;
+      }
+      
+
+      & p:first-of-type {
+        color: #fff;
+        font-family: 'Poppins-SemiBold';
+        font-size: $title-section;
+        line-height: 59px;
+      }
+    }
+
+    &__item:not(:last-child):after {
+      content: "";
+      position: absolute;
+      right: -85px;
+      top: 0;
+      width: 3px;
+      height: 100%;
+      border-radius: 4px;
+      background-color: #fff;
+    }
+  }
+
+  
+}
+
+  

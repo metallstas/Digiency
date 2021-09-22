@@ -1,0 +1,70 @@
+.blog {
+
+  &__cards {
+
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+      padding: 15px 15px 30px;
+      background-color: #fff;
+      border-radius: 10px;
+
+      & div {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        font-family: 'Poppins-Light';
+        font-size: 10px;
+        line-height: 19px;
+        color: $brown;
+
+        & img {
+          margin-right: 5px;
+        }
+
+        & span {
+          margin-right: 10px;
+        }
+      }
+
+
+
+      & button {
+        margin-top: 25px;
+        padding: 12px 22px;
+        background-color: $orange;
+        color: #fff;
+        border-radius: 5px;
+        font-family: 'Poppins-Medium';
+        font-size: $header-text;
+        border: none;
+      }
+
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &__title {
+      margin-top: 15px;
+      font-family: 'Poppins-Medium';
+      font-size: $header-text;
+      line-height: 30px;
+      color: $brown;
+    }
+
+    
+
+    &__text {
+      margin-top: 15px;
+      font-family: 'Poppins-Regular';
+      font-size: $card-text;
+      line-height: 24px;
+    }
+    
+  }
+
+
+}

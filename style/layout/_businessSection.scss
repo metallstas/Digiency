@@ -1,0 +1,67 @@
+
+.business {
+
+  background-color: $bg-color;
+
+  &__wrapper {
+    display: flex;
+    padding: 120px 0;
+  }
+
+  &__content {
+
+    margin-top: 0;
+    margin-right: 10px;
+
+    & h2 {
+      font-family: 'Poppins-SemiBold';
+      font-size: $title-section;
+      line-height: 59px;
+      color: $brown;
+    }
+
+    & ul {
+      margin-top: 20px;
+      list-style: none;
+
+      & li {
+        display: flex;
+        align-items: center;
+        font-family: 'Poppins-Regular';
+        line-height: 24px;
+        color: $brown;
+
+        & img {
+          margin-right: 17px;
+        }
+      }
+
+      & li:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+
+    &__p {
+      display:inline-block;
+      position: relative;
+      font-family: 'Poppins-Regular';
+      font-size: $card-text;
+      line-height: 24px;
+      color: $orange;
+      margin: 0;
+      margin-bottom: 15px;
+    }
+
+    &__p:after {
+      content: '';
+      position: absolute;
+      top: 15px;
+      width: 40px;
+      height:1px;
+      margin-left: 10px;
+      background-color: $orange;
+    }
+  }
+}
+
+

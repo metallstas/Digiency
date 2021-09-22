@@ -1,0 +1,39 @@
+
+.header{
+  position: absolute;
+  width: 100%;
+
+  &__wrapper{
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+  }
+
+  &__nav {
+    margin-left: auto;
+    margin-right: 40px;
+
+    & ul {
+      display: flex;
+
+      & li:not(:last-child) {
+        margin-right: 30px;
+      }
+
+      & li {
+      list-style: none;
+
+        & a {
+          text-decoration: none;
+          font-size: $header-text;
+          color: $brown;
+          font-family: 'Poppins-Medium';
+        }
+
+        & a:hover {
+          color: $orange;
+        }
+      }
+    }  
+  }
+}

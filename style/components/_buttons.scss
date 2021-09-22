@@ -1,0 +1,26 @@
+.header__button {
+    width:135px;
+    height: 50px;
+    border: 1px solid $brown;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: $bg-color;
+    color: $brown;
+    font-size: $header-text;
+    font-family: 'Poppins-Medium';
+    cursor: pointer;
+}
+
+.main__button {
+      width: 182px;
+      height: 50px;
+      margin-top: 30px;
+      color: #fff;
+      background-color: $orange;
+      border-radius: 5px;
+      border-color: $orange;
+      font-size: $header-text;
+      line-height: 30px;
+      font-family: 'Poppins-Medium';
+      cursor: pointer;
+    }
